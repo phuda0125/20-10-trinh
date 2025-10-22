@@ -301,9 +301,6 @@
             pointer-events: none;
         }
 
-        /* ------------------------------
-        Responsive cho màn hình nhỏ
-        ---------------------------------- */
         @media (max-width: 768px) {
             .center-message {
                 width: calc(100% - 20px);
@@ -363,19 +360,19 @@
 </head>
 
 <body>
-   <!-- Thông điệp chúc mừng-->
+  
     <div class="center-message">
-        <strong>Chúc mừng 20-10</strong> <!--Sửa tiêu đề chúc mừng ở đây-->
+        <strong>Chúc mừng 20-10</strong> 
         <span id="centerText">
-            Chúc Em 20-10 vui vẻ nghen<br> <!-- Sử lời nhắn hiển thị đầu ở đây-->
+            Chúc Em 20-10 vui vẻ nghen<br>
             Mong em luôn rạng rỡ như những bó hoa!
         </span>
     </div>
 
-    <!-- Ảnh động trang trí -->
-    <img src="./assets/mewmew.gif" alt="GIF" class="center-gif" /> <!-- Thay ảnh động bên dưới -->
+    
+    <img src="./assets/mewmew.gif" alt="GIF" class="center-gif" /> 
 
-    <!-- Hiển thị lời chúc -->
+ 
     <div class="popup" id="popup">
         <div class="popup-content">
             <img id="popupImage" src="" alt="Lời chúc">
@@ -384,11 +381,11 @@
     </div>
     <div class="overlay" id="overlay"></div>
 
-    <!-- Nhạc nền  -->
-    <audio id="player" src="./assets/a.mp3"></audio> <!-- Sửa bài hát ở đây -->
+   
+    <audio id="player" src="./assets/a.mp3"></audio> 
 
     <script>
-        //Sửa ảnh và lời nhắn ở đây
+       
         const messages = [
             {
                 img: "./assets/a1.jpg", 
@@ -421,7 +418,7 @@
         const popupImage = document.getElementById("popupImage");
         const popupMessage = document.getElementById("popupMessage");
         const centerText = document.getElementById("centerText");
-        //Thay những ảnh rơi từ trên xuống ở đây
+        
         const letterImages = [
             "./assets/letters.png",
             "./assets/q3.png",
@@ -432,7 +429,7 @@
         ];
 
         function createHeartExplosion(x, y) {
-            //Thay icon khi ấn thư, hoa, quà
+           
             const hearts = ['💗'];
             const numHearts = 12;
 
@@ -517,6 +514,7 @@
 
 
 </html>
+
 
 
 
